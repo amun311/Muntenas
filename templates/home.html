@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Familia Muntenas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <style>
+    #banner {
+      height: 360px;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  {% include 'nav.html' %}
+  <img class="img-fluid" id="banner" src="https://replit.com/@amun311/Muntenas#static/banner.jpeg">
+  <div class="container">
+    <h1 class="text-center mt-2 mb-4">
+      Membrii familiei {{family_name}}
+    </h1>
+    <div class="row" style="margin-bottom:32px">
+      <div class="col-md-6">
+        <p class="lead">
+          Suntem familia Muntenas.
+          Mai multa descrieere cu timpul...
+        </p>
+      </div>
+      <div class="d-none d-md-block col-md-6">
+        <img src="https://replit.com/@amun311/Flask-1#static/us.JPG" style="height:320px;border-radius:4px;">
+      </div>
+    </div>
+    <h2 class="text-center mt-2 mb-4">Membrii familiei</h2>
+    <div>
+      {% for member in family %}
+      {% include 'family.html' %}
+      {% endfor %}
+    </div>
+    <div class="text-center">
+      <a class="btn btn-primary btn-lg"
+        href="mailto:alexandru.muntenas@gmail.com?subject=Quero%20hablar%20contigo...">Contact Us</a>
+    </div>
+  </div>
+  {% include 'footer.html' %}
+</body>
+
+</html>
