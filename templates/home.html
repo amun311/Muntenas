@@ -22,7 +22,7 @@
   <img class="img-fluid" id="banner" src="/static/ban.JPG">
   <div class="container">
     <h1 class="text-center mt-2 mb-4">
-      Despre familia {{family_name}}
+      Despre familia Muntenas
     </h1>
     <div class="row" style="margin-bottom:32px">
       <div class="col-md-6">
@@ -36,17 +36,14 @@
       </div>
     </div>
     <h2 class="text-center mt-2 mb-4">Membrii familiei</h2>
-    <div>
-      {% for member in family %}
-      {% include 'family.html' %}
-      {% endfor %}
-    </div>
+  {% include 'members.html' %}  
     <div class="text-center">
       <a class="btn btn-primary btn-lg"
         href="mailto:alexandru.muntenas@gmail.com?subject=Quero%20hablar%20contigo...">Trimite e-mail</a>
+      
     </div>
   </div>
-  {% include 'footer.html' %}
+  {% include 'down.html' %}
 </body>
 
 </html>
