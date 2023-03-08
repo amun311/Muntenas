@@ -31,4 +31,4 @@ def hello():
   return render_template('home.html',family = FAMILY, family_name = 'Muntenas')
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=81,debug=True)
+  app.run(host='0.0.0.0',debug=True)
