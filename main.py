@@ -5,19 +5,19 @@ app = Flask(__name__)
 FAMILY = [
   {
     'id': 1,
-    'title': 'Padre',
+    'fam': 'Tata',
     'nombre': 'Alexandru Gheorghe',
     'edad': '39'
   },
   {
     'id': 2,
-    'title': 'Madre',
+    'fam': 'Mama',
     'nombre': 'Florentina Rodica',
     'edad': '40'
   },
   {
    'id': 3,
-    'title': 'Hijo',
+    'fam': 'Fiu',
     'nombre': 'Alexandru Theodor',
     'edad': '17'
   }
@@ -28,5 +28,5 @@ FAMILY = [
 #    return 'Hello from Flask!'
 @app.route('/')
 def hello():
-  return render_template('home.html')
+  return render_template('home.html',family = FAMILY, family_name = 'Muntenas')
 app.run(host='0.0.0.0', port=81)

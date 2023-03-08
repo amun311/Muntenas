@@ -9,7 +9,7 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <style>
     #banner {
-      height: 360px;
+      height: 560px;
       width: 100%;
       object-fit: cover;
       margin-bottom: 16px;
@@ -19,10 +19,10 @@
 
 <body>
   {% include 'nav.html' %}
-  <img class="img-fluid" id="banner" src="https://replit.com/@amun311/Muntenas#static/banner.jpeg">
+  <img class="img-fluid" id="banner" src="/static/ban.JPG">
   <div class="container">
     <h1 class="text-center mt-2 mb-4">
-      Membrii familiei {{family_name}}
+      Despre familia {{family_name}}
     </h1>
     <div class="row" style="margin-bottom:32px">
       <div class="col-md-6">
@@ -32,7 +32,7 @@
         </p>
       </div>
       <div class="d-none d-md-block col-md-6">
-        <img src="https://replit.com/@amun311/Flask-1#static/us.JPG" style="height:320px;border-radius:4px;">
+        <img src="/static/us.JPG" style="height:640px;border-radius:4px;">
       </div>
     </div>
     <h2 class="text-center mt-2 mb-4">Membrii familiei</h2>
@@ -43,7 +43,7 @@
     </div>
     <div class="text-center">
       <a class="btn btn-primary btn-lg"
-        href="mailto:alexandru.muntenas@gmail.com?subject=Quero%20hablar%20contigo...">Contact Us</a>
+        href="mailto:alexandru.muntenas@gmail.com?subject=Quero%20hablar%20contigo...">Trimite e-mail</a>
     </div>
   </div>
   {% include 'footer.html' %}
